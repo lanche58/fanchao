@@ -99,7 +99,7 @@ to { -webkit-transform: scale(1); transform: scale(1); }
 .ixpro .t:before { content: ""; width: 16px; position: absolute; top: 0; bottom: 0; right: 23px; background: url(../images/add.png) no-repeat center center; }
 .ixpro .b { overflow: hidden; position: relative; }
 .ixpro .b:before { content: ""; width: 0; height: 2px; background: #e60012; position: absolute; left: auto; right: 0; bottom: 0; z-index: 9; transition: 600ms; -webkit-transition: 600ms; }
-.ixpro li:first-child .b:after { content: ""; width: 1px; position: absolute; top: 55px; bottom: 72px; right: 0; background: #e5e5e5; }
+
 .ixpro a.act .t { background: #e60012; }
 .ixpro a.act .b:before { width: 100%; left: 0; right: auto; }
 .ixprobox .ixpro { margin-top: -50px; position: relative; z-index: 199; }
@@ -532,3 +532,37 @@ div.zoomDiv{ z-index: 999; position: absolute; top: 0; left: 0; width: 200px; he
 	.ixpro .pic{ background: url(../images/ip_bg.jpg) no-repeat center/cover; }
 }
 /* 2019/3/20 */
+
+/* 2019/4/18 */
+.ixpro li{ width: 33.33%; }
+.ixpro .txts .pa{ padding: 16% 0 0 30px; }
+.ip-ti .en{ font-size: 26px; }
+.ip-ti .line { width: 30px; height: 3px; margin-top: 20px; }
+.ixpro .txts .more{ margin-top: 35%; }
+.ixpro li + li .b:after { content: ""; width: 1px; position: absolute; top: 23%; bottom: 23%; left: 0; background: #e5e5e5; }
+@media screen and (max-width: 1601px) {
+	.ixpro .txts .more{ margin-top: 30%; }
+}
+@media screen and (max-width: 1440px) {
+	.ip-ti .en{ font-size: 22px; }
+	.ip-ti .line{ width: 22px; margin-top: 18px; }
+	.ixpro .txts .more{ font-size: 12px; }
+}
+@media screen and (max-width: 1221px) {
+	.ip-ti .en{ font-size: 20px; }
+	.ip-ti .line{ margin-top: 15px; }
+}
+@media screen and (max-width: 1153px) {
+	.ixpro .txts .pa{ padding-left: 25px; }
+	.ip-ti .en{ font-size: 17px; }
+	.ip-ti .line{ width: 18px; height: 2px; margin-top: 12px; }
+}
+@media screen and (max-width: 1024px) {
+	.ip-ti .line{ width: 33px; height: 4px; }
+	.ixpro .txts .more{ font-size: 14px; }
+	.ixpro li + li .b:after{ display: none; }
+}
+@media screen and (max-width: 481px) {
+	.ixpro li{ margin-bottom: 10px; }
+}
+/* 2019/4/18 */
